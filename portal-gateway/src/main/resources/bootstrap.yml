@@ -1,8 +1,19 @@
 spring:
   application:
     name: portal-gateway
-
+  profiles:
+    active: dev
   cloud:
-    config:
-      uri: http://127.0.0.1:7002
-      profile: dev
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+        namespace: baf1b416-9a9e-4d18-ab0d-fdf302aab100
+logging:
+  level:
+    root: info
+
+
+

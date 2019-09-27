@@ -10,7 +10,9 @@
     </parent>
 
     <artifactId>portal-config</artifactId>
+    <packaging>jar</packaging>
 
+    
     <properties>
         <spring-cloud-config-server.version>2.1.4.RELEASE</spring-cloud-config-server.version>
 
@@ -26,6 +28,12 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
             <version>${spring-cloud-config-server.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-alibaba-nacos-discovery -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
     </dependencies>
 
