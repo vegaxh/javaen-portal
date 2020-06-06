@@ -14,7 +14,7 @@
 
     
     <properties>
-        <spring-cloud-config-server.version>2.1.4.RELEASE</spring-cloud-config-server.version>
+        <spring-cloud-config-server.version>2.2.0.RELEASE</spring-cloud-config-server.version>
 
     </properties>
 
